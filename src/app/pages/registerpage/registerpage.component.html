@@ -1,0 +1,29 @@
+<main>
+    <div class="container" >
+        <div class="card">
+            <div class="card-body imgFondoLogin">
+                <h5 class="d-grid gap-2 col-2 mx-auto" style="color:white">Datos de Ingreso</h5>
+                        <form [formGroup]="registerform" class="row g-5" (ngSubmit)="onSubmit()">
+                            <div class="col-8 mx-auto">
+                                <label for="nombre" style="color:yellow">Nombre</label>
+                                <input [formControl]="nombre" class="form-control" type="text">
+                                <app-error-help [control]="nombre"></app-error-help>
+                                <label for="apellido" style="color:yellow">Apellido</label>
+                                <input [formControl]="apellido" class="form-control" type="text">
+                                <app-error-help [control]="apellido"></app-error-help>
+                                <label for="email" style="color:yellow">Email</label>
+                                <input [formControl]="email" class="form-control" type="email">
+                                <app-error-help [control]="email"></app-error-help>
+                                <label for="contrasena" style="color:yellow">Contraseña</label>
+                                <input [formControl]="contrasena" class="form-control" type="password">
+                                <label for="repitecontrasena" style="color:yellow">Repite Contraseña</label>
+                                <input [formControl]="repitecontrasena" class="form-control" type="password">
+                            </div>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button [disabled]="registerform.invalid" class="btn btn-primary" type="submit" >Enviar</button>  
+                        </div>
+                    </form>
+                </div>
+            </div>        
+        </div>
+</main>

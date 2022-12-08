@@ -1,0 +1,15 @@
+main{
+    min-height: 100vh;
+    background-color: blueviolet;
+}
+
+.imgFondoLogin{
+    background-image:url(http://res.cloudinary.com/hdsqazxtw/image/upload/v1570710978/coderhouse.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.titleBackground{
+    background-color: aqua;
+    background-size: cover;
+    min-height: auto;
+}
